@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rao Samar | Web Developer & IT Support</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#2B3CFF;--dots:rgba(10,15,120,.4);--card:#fff;--text:#0E0E1A;--ink:#0E0E1A;--yel:#FFE53D;--pink:#FF8FD0;--mint:#6CF2B5;--muted:#5b5b78;--onbg:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#171C7A;--dots:rgba(0,0,40,.5);--card:#1B1B33;--text:#F2F2FA;--muted:#A9A9C8}}
+:root[data-theme="dark"]{--bg:#171C7A;--dots:rgba(0,0,40,.5);--card:#1B1B33;--text:#F2F2FA;--muted:#A9A9C8}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg) radial-gradient(circle,var(--dots) 2px,transparent 2.5px) 0 0/24px 24px;color:var(--onbg);font:17px/1.55 'JetBrains Mono',ui-monospace,Consolas,monospace}
+h1,h2,h3{font-family:'Bricolage Grotesque','Arial Black',Arial,sans-serif;margin:0;line-height:1}
+main{max-width:1100px;margin:0 auto;padding:40px 22px 70px}
+section{margin-top:84px}
+h2{font-size:clamp(34px,6vw,56px);letter-spacing:-.03em;margin-bottom:28px}
+.win{background:var(--card);color:var(--text);border:4px solid var(--ink);box-shadow:9px 9px 0 var(--ink);overflow:hidden}
+.bar{display:flex;gap:8px;align-items:center;padding:10px 14px;border-bottom:4px solid var(--ink);background:var(--yel);color:#0E0E1A;font-weight:700;font-size:15px}
+.bar i{width:14px;height:14px;border:3px solid var(--ink);background:#fff}
+.body{padding:20px 22px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding-top:30px}
+.hero h1{font-size:clamp(56px,11vw,128px);font-weight:800;letter-spacing:-.05em}
+.hero p{max-width:34ch;margin:20px 0 26px}
+.pill{display:inline-flex;gap:10px;align-items:center;background:var(--mint);color:#0E0E1A;border:4px solid var(--ink);box-shadow:5px 5px 0 var(--ink);border-radius:50px;padding:8px 20px;font-weight:700;transform:rotate(-2deg)}
+.pill:before{content:"";width:14px;height:14px;border-radius:50%;background:var(--ink)}
+.code{white-space:pre-wrap;font-size:16px;line-height:1.8}
+.k{color:#D6258A;font-weight:700}.s{color:#0B8A57}
+.cur{position:absolute;right:-6px;bottom:-24px;background:var(--pink);color:#0E0E1A;border:4px solid var(--ink);border-radius:30px;padding:4px 16px;font-weight:700;font-size:14px;transform:rotate(-3deg)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:30px}
+.tag{display:inline-block;background:var(--ink);color:#fff;padding:3px 10px;font-size:13px;font-weight:700;margin-bottom:10px}
+.win h3{font-size:25px;margin-bottom:4px}
+.win p,.win li{margin:0}
+.win ul{padding-left:18px;margin:10px 0 0;font-size:15px}.win li{margin-bottom:6px}
+.sub{color:var(--muted);font-size:14px;margin-bottom:6px}
+.p1 .bar{background:var(--pink)}.p2 .bar{background:var(--mint)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.chips span{border:3px solid var(--ink);background:var(--card);color:var(--text);padding:3px 12px;font-weight:700;font-size:14px;box-shadow:4px 4px 0 var(--ink)}
+.btn{display:inline-block;background:var(--yel);color:#0E0E1A;border:4px solid var(--ink);box-shadow:7px 7px 0 var(--ink);padding:16px 28px;font-weight:700;text-decoration:none;font-size:20px;margin:0 14px 14px 0}
+.btn:focus-visible,.btn:hover{outline:4px solid #fff;transform:translate(-2px,-2px)}
+footer{text-align:center;padding:0 22px 40px;font-size:14px;opacity:.85}
+@media(max-width:760px){.hero{grid-template-columns:1fr}.cur{right:8px}}
+</style></head><body><main>
+<div class="hero">
+ <div>
+  <span class="pill">open to work</span>
+  <h1 style="margin-top:26px">Rao<br>Samar</h1>
+  <p>Computer science graduate in Lahore. I build websites, fix what breaks, and test games until they behave.</p>
+ </div>
+ <div style="position:relative">
+  <div class="win" style="transform:rotate(-2deg)"><div class="bar"><i></i><i></i><i></i>&nbsp;me.js</div>
+  <div class="body code"><span class="k">const</span> me = {
+  role: <span class="s">"cs grad"</span>,
+  does: [<span class="s">"web"</span>, <span class="s">"it support"</span>,
+         <span class="s">"game qa"</span>],
+  city: <span class="s">"Lahore"</span>,
+  always: <span class="s">"building"</span>,
+};</div></div>
+  <span class="cur">your next hire</span>
+ </div>
+</div>
+
+<section id="work"><h2>Experience</h2>
+<div class="grid">
+ <div class="win"><div class="bar"><i></i><i></i><i></i></div><div class="body"><span class="tag">Aug – Dec 2024</span><h3>Web Development Intern</h3><p class="sub">Vie Apps Studio, Lahore</p><ul><li>Built and updated sites with HTML, CSS, JavaScript and WordPress.</li><li>Tested pages, found issues and helped with troubleshooting.</li><li>Worked to team timelines and documentation practices.</li></ul></div></div>
+ <div class="win"><div class="bar"><i></i><i></i><i></i></div><div class="body"><span class="tag">2026 – now</span><h3>Independent Web &amp; IT</h3><p class="sub">Self-employed, Lahore</p><ul><li>Build and maintain small client sites in WordPress and HTML.</li><li>Organize client requirements, content and files.</li><li>Solve routine technical issues and keep accurate records.</li></ul></div></div>
+ <div class="win"><div class="bar"><i></i><i></i><i></i></div><div class="body"><span class="tag">2026 – now</span><h3>Independent Game QA Tester</h3><p class="sub">Self-employed, Lahore</p><ul><li>Playtest indie and mobile games for bugs, crashes and balance.</li><li>Write clear bug reports ranked by severity.</li><li>Retest fixes before sign-off.</li></ul></div></div>
+</div></section>
+
+<section id="projects"><h2>Projects</h2>
+<div class="grid">
+ <div class="win p1"><div class="bar"><i></i><i></i><i></i>&nbsp;e-commerce-app</div><div class="body"><h3>E-Commerce App</h3><p class="sub">Final year project</p><ul><li>Voice search, image search and a loyalty points system.</li><li>Fraud detection that flags suspicious orders.</li><li>Cart, secure checkout, order tracking and reviews.</li></ul></div></div>
+ <div class="win p2"><div class="bar"><i></i><i></i><i></i>&nbsp;bubble-shooter</div><div class="body"><h3>Bubble Shooter</h3><p class="sub">Game and level design</p><ul><li>Built the shooting and bubble-matching mechanics.</li><li>Designed levels with rising difficulty.</li><li>Playtested every level to balance it and fix bugs.</li></ul></div></div>
+ <div class="win"><div class="bar"><i></i><i></i><i></i>&nbsp;client-sites</div><div class="body"><h3>Client Websites</h3><p class="sub">House moving company, travel and more</p><ul><li>Planned, designed and published business sites end to end.</li><li>Clean layouts matched to each business's customers.</li><li>Built with AI-assisted (vibe coding) tools.</li></ul></div></div>
+</div></section>
+
+<section id="skills"><h2>Skills</h2>
+<div class="win"><div class="body">
+ <p class="sub">Code</p><div class="chips"><span>HTML</span><span>C++</span><span>JavaScript (basic)</span><span>CSS (basic)</span></div>
+ <p class="sub" style="margin-top:22px">Tools</p><div class="chips"><span>WordPress</span><span>VS Code</span><span>Word</span><span>Excel</span><span>PowerPoint</span></div>
+ <p class="sub" style="margin-top:22px">IT and operations</p><div class="chips"><span>Troubleshooting</span><span>Data entry</span><span>Record keeping</span><span>Game QA</span></div>
+ <p class="sub" style="margin-top:22px">Learning next</p><div class="chips"><span>Game development</span><span>3D modeling</span><span>AR/VR</span><span>UI/UX</span></div>
+</div></div>
+<p style="margin-top:26px">BSc Computer Science, University of Central Punjab, Lahore. English and Urdu.</p></section>
+
+<section id="contact"><h2>Let's talk</h2>
+<a class="btn" href="mailto:raosamar97@gmail.com">raosamar97@gmail.com</a><a class="btn" style="background:var(--pink)" href="https://www.linkedin.com/in/rao-samar-875352153">LinkedIn</a>
+<p>Looking for a junior developer, QA, technical support or production assistant role at a software house or game studio.</p></section>
+</main><footer>Rao Samar, Lahore, Pakistan</footer></body></html>
