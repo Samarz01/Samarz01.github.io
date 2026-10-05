@@ -1,91 +1,207 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Rao Samar | Web Developer & IT Support</title>
-<meta name="description" content="Rao Samar, computer science graduate in Lahore. Web development, IT support and game QA. Open to junior roles.">
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<title>Rao Samar | Software Intern Applicant</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#2B3CFF;--dots:rgba(10,15,120,.4);--card:#fff;--text:#0E0E1A;--ink:#0E0E1A;--yel:#FFE53D;--pink:#FF8FD0;--mint:#6CF2B5;--muted:#5b5b78;--onbg:#fff;
-box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#171C7A;--dots:rgba(0,0,40,.5);--card:#1B1B33;--text:#F2F2FA;--muted:#A9A9C8}}
-:root[data-theme="dark"]{--bg:#171C7A;--dots:rgba(0,0,40,.5);--card:#1B1B33;--text:#F2F2FA;--muted:#A9A9C8}
-html{scroll-padding-top:env(safe-area-inset-top,0px)}
+:root{
+  --bg:#F4F5FF;--panel:#FFFFFF;--line:#D9DCF5;--text:#1B1E3F;--muted:#5A5F8C;
+  --violet:#5B45E8;--amber:#B85C00;--cyan:#007C86;--chip:#ECEEFF;--glow:rgba(91,69,232,.14);
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F1226;--panel:#171A38;--line:#2B3062;--text:#E7E9FF;--muted:#9EA3D6;
+    --violet:#A494FF;--amber:#FFB86B;--cyan:#62E3EA;--chip:#20244A;--glow:rgba(164,148,255,.18);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F1226;--panel:#171A38;--line:#2B3062;--text:#E7E9FF;--muted:#9EA3D6;
+  --violet:#A494FF;--amber:#FFB86B;--cyan:#62E3EA;--chip:#20244A;--glow:rgba(164,148,255,.18);
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg) radial-gradient(circle,var(--dots) 2px,transparent 2.5px) 0 0/24px 24px;color:var(--onbg);font:17px/1.55 'JetBrains Mono',ui-monospace,Consolas,monospace}
-h1,h2,h3{font-family:'Bricolage Grotesque','Arial Black',Arial,sans-serif;margin:0;line-height:1}
-main{max-width:1100px;margin:0 auto;padding:40px 22px 70px}
-section{margin-top:84px}
-h2{font-size:clamp(34px,6vw,56px);letter-spacing:-.03em;margin-bottom:28px}
-.win{background:var(--card);color:var(--text);border:4px solid var(--ink);box-shadow:9px 9px 0 var(--ink);overflow:hidden}
-.bar{display:flex;gap:8px;align-items:center;padding:10px 14px;border-bottom:4px solid var(--ink);background:var(--yel);color:#0E0E1A;font-weight:700;font-size:15px}
-.bar i{width:14px;height:14px;border:3px solid var(--ink);background:#fff}
-.body{padding:20px 22px}
-.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding-top:30px}
-.hero h1{font-size:clamp(56px,11vw,128px);font-weight:800;letter-spacing:-.05em}
-.hero p{max-width:34ch;margin:20px 0 26px}
-.pill{display:inline-flex;gap:10px;align-items:center;background:var(--mint);color:#0E0E1A;border:4px solid var(--ink);box-shadow:5px 5px 0 var(--ink);border-radius:50px;padding:8px 20px;font-weight:700;transform:rotate(-2deg)}
-.pill:before{content:"";width:14px;height:14px;border-radius:50%;background:var(--ink)}
-.code{white-space:pre-wrap;font-size:16px;line-height:1.8}
-.k{color:#D6258A;font-weight:700}.s{color:#0B8A57}
-.cur{position:absolute;right:-6px;bottom:-24px;background:var(--pink);color:#0E0E1A;border:4px solid var(--ink);border-radius:30px;padding:4px 16px;font-weight:700;font-size:14px;transform:rotate(-3deg)}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:30px}
-.tag{display:inline-block;background:var(--ink);color:#fff;padding:3px 10px;font-size:13px;font-weight:700;margin-bottom:10px}
-.win h3{font-size:25px;margin-bottom:4px}
-.win p,.win li{margin:0}
-.win ul{padding-left:18px;margin:10px 0 0;font-size:15px}.win li{margin-bottom:6px}
-.sub{color:var(--muted);font-size:14px;margin-bottom:6px}
-.p1 .bar{background:var(--pink)}.p2 .bar{background:var(--mint)}
-.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
-.chips span{border:3px solid var(--ink);background:var(--card);color:var(--text);padding:3px 12px;font-weight:700;font-size:14px;box-shadow:4px 4px 0 var(--ink)}
-.btn{display:inline-block;background:var(--yel);color:#0E0E1A;border:4px solid var(--ink);box-shadow:7px 7px 0 var(--ink);padding:16px 28px;font-weight:700;text-decoration:none;font-size:20px;margin:0 14px 14px 0}
-.btn:focus-visible,.btn:hover{outline:4px solid #fff;transform:translate(-2px,-2px)}
-footer{text-align:center;padding:0 22px 40px;font-size:14px;opacity:.85}
-@media(max-width:760px){.hero{grid-template-columns:1fr}.cur{right:8px}}
-</style></head><body><main>
-<div class="hero">
- <div>
-  <span class="pill">open to work</span>
-  <h1 style="margin-top:26px">Rao<br>Samar</h1>
-  <p>Computer science graduate in Lahore. I build websites, fix what breaks, and test games until they behave.</p>
- </div>
- <div style="position:relative">
-  <div class="win" style="transform:rotate(-2deg)"><div class="bar"><i></i><i></i><i></i>&nbsp;me.js</div>
-  <div class="body code"><span class="k">const</span> me = {
-  role: <span class="s">"cs grad"</span>,
-  does: [<span class="s">"web"</span>, <span class="s">"it support"</span>,
-         <span class="s">"game qa"</span>],
-  city: <span class="s">"Lahore"</span>,
-  always: <span class="s">"building"</span>,
-};</div></div>
-  <span class="cur">your next hire</span>
- </div>
-</div>
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Sora',system-ui,-apple-system,'Segoe UI',sans-serif;line-height:1.65;font-size:16px;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+  background-size:44px 44px;background-attachment:fixed}
+body::before{content:"";position:fixed;inset:0;background:radial-gradient(ellipse at 20% 0%,var(--glow),transparent 55%),var(--bg);opacity:.93;z-index:-1}
+.mono{font-family:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace}
+main{max-width:920px;margin:0 auto;padding:28px 20px 60px}
+a{color:var(--violet)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--violet);outline-offset:3px}
 
-<section id="work"><h2>Experience</h2>
-<div class="grid">
- <div class="win"><div class="bar"><i></i><i></i><i></i></div><div class="body"><span class="tag">Aug – Dec 2024</span><h3>Web Development Intern</h3><p class="sub">Vie Apps Studio, Lahore</p><ul><li>Built and updated sites with HTML, CSS, JavaScript and WordPress.</li><li>Tested pages, found issues and helped with troubleshooting.</li><li>Worked to team timelines and documentation practices.</li></ul></div></div>
- <div class="win"><div class="bar"><i></i><i></i><i></i></div><div class="body"><span class="tag">2026 – now</span><h3>Independent Web &amp; IT</h3><p class="sub">Self-employed, Lahore</p><ul><li>Build and maintain small client sites in WordPress and HTML.</li><li>Organize client requirements, content and files.</li><li>Solve routine technical issues and keep accurate records.</li></ul></div></div>
- <div class="win"><div class="bar"><i></i><i></i><i></i></div><div class="body"><span class="tag">2026 – now</span><h3>Independent Game QA Tester</h3><p class="sub">Self-employed, Lahore</p><ul><li>Playtest indie and mobile games for bugs, crashes and balance.</li><li>Write clear bug reports ranked by severity.</li><li>Retest fixes before sign-off.</li></ul></div></div>
-</div></section>
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:28px}
+.top nav{display:flex;gap:16px;flex-wrap:wrap;font-size:14px}
+.top nav a{color:var(--muted);text-decoration:none}
+.top nav a:hover{color:var(--violet)}
+#theme{background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:8px;padding:6px 12px;font:inherit;font-size:13px;cursor:pointer}
 
-<section id="projects"><h2>Projects</h2>
-<div class="grid">
- <div class="win p1"><div class="bar"><i></i><i></i><i></i>&nbsp;e-commerce-app</div><div class="body"><h3>E-Commerce App</h3><p class="sub">Final year project</p><ul><li>Voice search, image search and a loyalty points system.</li><li>Fraud detection that flags suspicious orders.</li><li>Cart, secure checkout, order tracking and reviews.</li></ul></div></div>
- <div class="win p2"><div class="bar"><i></i><i></i><i></i>&nbsp;bubble-shooter</div><div class="body"><h3>Bubble Shooter</h3><p class="sub">Game and level design</p><ul><li>Built the shooting and bubble-matching mechanics.</li><li>Designed levels with rising difficulty.</li><li>Playtested every level to balance it and fix bugs.</li></ul></div></div>
- <div class="win"><div class="bar"><i></i><i></i><i></i>&nbsp;client-sites</div><div class="body"><h3>Client Websites</h3><p class="sub">House moving company, travel and more</p><ul><li>Planned, designed and published business sites end to end.</li><li>Clean layouts matched to each business's customers.</li><li>Built with AI-assisted (vibe coding) tools.</li></ul></div></div>
-</div></section>
+/* hero: the prompt window */
+.win{background:var(--panel);border:1px solid var(--line);border-radius:14px;box-shadow:0 0 0 4px var(--glow),0 24px 60px -24px var(--glow);overflow:hidden}
+.bar{display:flex;align-items:center;gap:8px;padding:10px 14px;border-bottom:1px solid var(--line);font-size:13px;color:var(--muted)}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--line)}
+.dot:nth-child(1){background:#FF6B8A}.dot:nth-child(2){background:var(--amber)}.dot:nth-child(3){background:var(--cyan)}
+.bar span{margin-left:8px}
+.body{padding:22px 22px 28px}
+.prompt{font-size:14px;color:var(--muted);min-height:3.4em;margin:0 0 20px}
+.prompt b{color:var(--cyan);font-weight:500}
+.caret{display:inline-block;width:8px;height:1.05em;background:var(--violet);vertical-align:-2px;margin-left:2px;animation:blink 1s steps(2) infinite}
+@keyframes blink{50%{opacity:0}}
+.result h1{font-size:clamp(40px,8vw,76px);line-height:1.02;margin:0 0 10px;letter-spacing:-.03em;font-weight:700}
+.result .role{font-size:clamp(16px,2.4vw,20px);color:var(--amber);margin:0 0 16px;font-weight:500}
+.result p.lead{max-width:62ch;margin:0 0 22px;color:var(--muted)}
+.js .result{opacity:0;transform:translateY(8px);transition:opacity .6s,transform .6s}
+.js .result.show{opacity:1;transform:none}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;border:1px solid var(--violet)}
+.btn.main{background:var(--violet);color:var(--bg)}
+.btn.alt{color:var(--violet)}
 
-<section id="skills"><h2>Skills</h2>
-<div class="win"><div class="body">
- <p class="sub">Code</p><div class="chips"><span>HTML</span><span>C++</span><span>JavaScript (basic)</span><span>CSS (basic)</span></div>
- <p class="sub" style="margin-top:22px">Tools</p><div class="chips"><span>WordPress</span><span>VS Code</span><span>Word</span><span>Excel</span><span>PowerPoint</span></div>
- <p class="sub" style="margin-top:22px">IT and operations</p><div class="chips"><span>Troubleshooting</span><span>Data entry</span><span>Record keeping</span><span>Game QA</span></div>
- <p class="sub" style="margin-top:22px">Learning next</p><div class="chips"><span>Game development</span><span>3D modeling</span><span>AR/VR</span><span>UI/UX</span></div>
-</div></div>
-<p style="margin-top:26px">BSc Computer Science, University of Central Punjab, Lahore. English and Urdu.</p></section>
+section{margin-top:64px}
+h2{font-size:26px;margin:0 0 6px;letter-spacing:-.02em}
+h2 .mono{color:var(--cyan);font-weight:500;font-size:.8em;margin-right:8px}
+.sub{color:var(--muted);margin:0 0 22px;max-width:60ch}
 
-<section id="contact"><h2>Let's talk</h2>
-<a class="btn" href="mailto:raosamar97@gmail.com">raosamar97@gmail.com</a><a class="btn" style="background:var(--pink)" href="https://www.linkedin.com/in/rao-samar-875352153">LinkedIn</a>
-<p>Looking for a junior developer, QA, technical support or production assistant role at a software house or game studio.</p></section>
-</main><footer>Rao Samar, Lahore, Pakistan</footer></body></html>
+/* projects as file rows */
+.proj{border:1px solid var(--line);background:var(--panel);border-radius:12px;padding:20px 22px;margin-bottom:14px;border-left:4px solid var(--violet)}
+.proj:nth-child(2){border-left-color:var(--amber)}
+.proj:nth-child(3){border-left-color:var(--cyan)}
+.proj h3{margin:0 0 4px;font-size:19px}
+.proj .meta{font-size:13px;color:var(--muted);margin:0 0 10px}
+.proj ul{margin:0 0 12px;padding-left:20px;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none}
+.chips li{background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:3px 12px;font-size:13px}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px 22px}
+.card h3{margin:0 0 4px;font-size:18px}
+.card .meta{font-size:13px;color:var(--muted);margin:0 0 10px}
+.card ul{margin:0;padding-left:20px;color:var(--muted)}
+.learn{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.learn .card p{margin:0;color:var(--muted)}
+.learn .card h3{font-size:16px}
+.contact{font-size:18px}
+.contact a{display:block;width:fit-content;margin:6px 0;word-break:break-word}
+footer{margin-top:60px;color:var(--muted);font-size:13px}
+@media (max-width:700px){.two{grid-template-columns:1fr}.top nav{font-size:13px;gap:12px}}
+@media (prefers-reduced-motion:reduce){.caret{animation:none}.js .result{transition:none}}
+</style>
+</head>
+<body>
+<main>
+  <div class="top">
+    <nav aria-label="Sections">
+      <a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#learning">Learning</a><a href="#contact">Contact</a>
+    </nav>
+    <button id="theme" type="button" aria-label="Switch light or dark theme">Theme</button>
+  </div>
+
+  <div class="win">
+    <div class="bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span class="mono">new-chat</span></div>
+    <div class="body">
+      <p class="prompt mono"><b>you:</b> <span id="typed">Show me someone who is new to coding, loves learning it, and builds with AI tools.</span><span class="caret" aria-hidden="true"></span></p>
+      <div class="result" id="result">
+        <h1>Rao Samar</h1>
+        <p class="role mono">Software intern applicant · Computer Science fresher</p>
+        <p class="lead">I just finished my Computer Science degree and I am looking for my first software internship. I am still learning to code, and I enjoy building real things with AI-assisted "vibe coding" tools. I learn fast, take feedback well, and want to grow next to experienced developers.</p>
+        <div class="btns"><a class="btn main" href="mailto:raosamar97@gmail.com">Email me</a><a class="btn alt" href="#projects">See my projects</a></div>
+      </div>
+    </div>
+  </div>
+
+  <section id="about">
+    <h2><span class="mono">~/</span>About me</h2>
+    <p class="sub">I'm from Lahore, Pakistan. I like seeing an idea turn into something people can use, and I want to understand how it works underneath. Games, websites and good interface design are what pull me in most.</p>
+  </section>
+
+  <section id="projects">
+    <h2><span class="mono">~/</span>Projects</h2>
+    <p class="sub">Things I have built, mostly with AI-assisted tools while I learn the fundamentals.</p>
+    <div class="proj">
+      <h3>E-Commerce App</h3>
+      <p class="meta">Final year project</p>
+      <ul>
+        <li>An online shopping app with product search, cart, secure checkout, order tracking and product reviews.</li>
+        <li>Extra features: voice search, image search, a loyalty points system and a way to flag suspicious orders.</li>
+      </ul>
+      <ul class="chips"><li>Final year project</li><li>AI-assisted tools</li><li>Full shopping flow</li></ul>
+    </div>
+    <div class="proj">
+      <h3>Bubble Shooter Game</h3>
+      <p class="meta">Game and level design</p>
+      <ul><li>A bubble shooter with aiming, shooting and bubble matching, and several levels that get harder as you go.</li></ul>
+      <ul class="chips"><li>Game design</li><li>Level design</li></ul>
+    </div>
+    <div class="proj">
+      <h3>Client Websites</h3>
+      <p class="meta">House moving company, travel sites and others</p>
+      <ul><li>Business websites built and published with AI-assisted tools, from planning and layout to content and launch.</li><li>Clean, easy-to-use pages made to fit each business and its customers.</li></ul>
+      <ul class="chips"><li>Vibe coding</li><li>Website planning</li><li>Publishing</li></ul>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2><span class="mono">~/</span>Experience and education</h2>
+    <p class="sub">A first taste of working in a studio, plus my degree.</p>
+    <div class="two">
+      <div class="card">
+        <h3>Web Development Intern</h3>
+        <p class="meta">Vie Apps Studio, Lahore · Aug 2024 to Dec 2024</p>
+        <ul><li>Supported the team with website updates and maintenance.</li><li>Learned how a real web project goes from idea to finished page.</li><li>Worked with the team, followed timelines and kept to documentation practices.</li></ul>
+      </div>
+      <div class="card">
+        <h3>BS in Computer Science</h3>
+        <p class="meta">University of Central Punjab, Lahore</p>
+        <ul><li>Final year project: an e-commerce app.</li><li>Intermediate in Computer Science before that.</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="learning">
+    <h2><span class="mono">~/</span>What I'm learning</h2>
+    <p class="sub">No big claims here. This is where I'm starting from and where I want to go.</p>
+    <div class="learn">
+      <div class="card"><h3>Programming basics</h3><p>How code is structured, and how to read and understand what AI tools write for me.</p></div>
+      <div class="card"><h3>AI-assisted building</h3><p>Writing clear prompts, reviewing results and improving them step by step.</p></div>
+      <div class="card"><h3>How apps get made</h3><p>How websites and apps are planned, built and shipped by a team.</p></div>
+      <div class="card"><h3>Tools I use</h3><p>WordPress for basic site updates, Visual Studio Code, and Microsoft Word, Excel and PowerPoint.</p></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2><span class="mono">~/</span>Let's talk</h2>
+    <p class="sub">I'm open to a software internship where I can learn and help on real work from the first week.</p>
+    <div class="contact">
+      <a href="mailto:raosamar97@gmail.com">raosamar97@gmail.com</a>
+      <a href="https://www.linkedin.com/in/rao-samar-875352153" rel="noopener">linkedin.com/in/rao-samar-875352153</a>
+    </div>
+  </section>
+
+  <footer>Rao Samar · Lahore, Pakistan</footer>
+</main>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  // theme toggle
+  try{var t=localStorage.getItem('theme');if(t)root.setAttribute('data-theme',t);}catch(e){}
+  document.getElementById('theme').addEventListener('click',function(){
+    var dark=root.getAttribute('data-theme')?root.getAttribute('data-theme')==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var next=dark?'light':'dark';root.setAttribute('data-theme',next);
+    try{localStorage.setItem('theme',next);}catch(e){}
+  });
+  // hero typing
+  var el=document.getElementById('typed'),res=document.getElementById('result');
+  var text=el.textContent,still=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(still){return;}
+  root.classList.add('js');el.textContent='';var i=0;
+  (function type(){
+    el.textContent=text.slice(0,i);
+    if(i++<text.length){setTimeout(type,28);}else{setTimeout(function(){res.classList.add('show');},350);}
+  })();
+})();
+</script>
+</body>
+</html>
